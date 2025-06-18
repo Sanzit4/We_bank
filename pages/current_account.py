@@ -22,7 +22,6 @@ with st.form("current_account_form"):
             if operations == "Deposit":
                 st.session_state.account.deposit(amount)
                 st.success(f"Successfuly Depositted ₦{amount}")
-            # add elif statement here for withdraw function
             elif operations == "Withdraw":
                 st.session_state.account.withdraw(amount)
                 st.success(f"Successfully Withdrew ₦{amount}!")
